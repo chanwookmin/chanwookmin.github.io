@@ -8,7 +8,7 @@ var maxY = garden.clientHeight - ball.clientHeight;
 
 //var aud = document.getElementById("jokerAudio");
 
-var aud=new Audio("data/joker_sound.mp3");
+var aud = new Audio("data/joker_sound.mp3");
 
 function handleOrientation(event) {
   var x = event.beta;  // In degree in the range [-180,180]
@@ -18,7 +18,7 @@ function handleOrientation(event) {
   output.innerHTML += "gamma: " + y + "\n";
 
   if(Math.abs(x)>20 || Math.abs(y)>20){
-    aud.play();
+    //aud.play();
   }
 
   // Because we don't want to have the device upside down
