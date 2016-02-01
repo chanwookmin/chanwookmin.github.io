@@ -23,7 +23,7 @@ function handleOrientation(event) {
   output.innerHTML  = "beta : " + x + "\n";
   output.innerHTML += "gamma: " + y + "\n";
 
-  if(Math.abs(x)>90 || Math.abs(y)>90){
+  if(Math.abs(x)>80 || Math.abs(y)>80){
     aud.play();
   }
 
