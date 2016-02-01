@@ -10,6 +10,11 @@ var maxY = garden.clientHeight - ball.clientHeight;
 
 var aud = new Audio("data/joker_sound.mp3");
 
+function init(){
+  aud.play();
+  aud.pause();
+}
+
 function handleOrientation(event) {
   var x = event.beta;  // In degree in the range [-180,180]
   var y = event.gamma; // In degree in the range [-90,90]
@@ -37,5 +42,5 @@ function handleOrientation(event) {
   ball.style.left = (maxY*y/180 - 10) + "px";
 
 }
-
+window.addEventListener('load', init());
 window.addEventListener('deviceorientation', handleOrientation);
