@@ -18,7 +18,7 @@ function handleOrientation(event) {
   output.innerHTML += "gamma: " + y + "\n";
 
   if(Math.abs(x)>20 || Math.abs(y)>20){
-    //aud.play();
+    aud.play();
   }
 
   // Because we don't want to have the device upside down
