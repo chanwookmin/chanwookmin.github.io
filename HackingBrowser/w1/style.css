@@ -1,10 +1,20 @@
 .garden {
   position: relative;
+  margin-left:auto;
+  margin-right:auto;
   width : 200px;
   height: 200px;
   border: 5px solid #CCC;
 /*  border-radius: 10px;*/
 }
+
+.block-center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
 
 .ball {
   position: absolute;
@@ -38,11 +48,16 @@
   text-align: center;
   font-size:12px;
 }
-
+.output{
+  visibility: hidden;
+}
 .myButton {
   position: relative;
-  margin:auto;
-  width:100%;
+  margin-top: -20px;
+  margin-left:auto;
+  margin-right:auto;
+  width : 200px;
+  height: 60px;
   background-color:#000000;
   border:1px solid #18ab29;
   display:inline-block;
