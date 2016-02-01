@@ -20,8 +20,8 @@ function handleOrientation(event) {
   var x = event.beta;  // In degree in the range [-180,180]
   var y = event.gamma; // In degree in the range [-90,90]
 
-  output.innerHTML  = "beta : " + x + "\n";
-  output.innerHTML += "gamma: " + y + "\n";
+  // output.innerHTML  = "beta : " + x + "\n";
+  // output.innerHTML += "gamma: " + y + "\n";
 
   if(Math.abs(x)>80 || Math.abs(y)>80){
     aud.play();
@@ -43,5 +43,5 @@ function handleOrientation(event) {
   ball.style.left = (maxY*y/180 - 10) + "px";
 
 }
-window.addEventListener('load', init());
+//window.addEventListener('load', init());
 window.addEventListener('deviceorientation', handleOrientation);
