@@ -13,7 +13,7 @@ var aud = new Audio("data/joker_sound.mp3");
 
 function init(){
   aud.play();
-  aud.pause();
+  //aud.pause();
 }
 
 function handleOrientation(event) {
